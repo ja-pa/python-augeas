@@ -48,7 +48,7 @@ const char *aug_error_details(augeas *aug);
 void free(void *);
 """)
 
-lib = ffi.dlopen("augeas")
+
 
 if __name__ == "__main__":
     ffi.compile(verbose=True)

@@ -32,7 +32,8 @@ format and the transformation into a tree.
 
 from sys import version_info as _pyver
 
-from augeas.ffi import ffi, lib
+from augeas import ffi
+lib = ffi.dlopen("augeas")
 
 __author__ = "Nathaniel McCallum <nathaniel@natemccallum.com>"
 __credits__ = """Jeff Schroeder <jeffschroeder@computer.org>
